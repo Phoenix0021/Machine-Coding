@@ -1,0 +1,41 @@
+VendingMachineSystem/
+│
+├── controller/                # Entry point or orchestrator logic
+│   └── VendingMachine.java
+│
+├── model/                     # Core domain models and enums
+│   ├── Product.java
+│   ├── Payment.java
+│   ├── PaymentMethod.java
+│   └── Transaction.java
+│
+├── service/                   # Business logic interfaces and implementations
+│   ├── catalog/
+│   │   ├── ProductCatalog.java
+│   │   └── ProductCatalogImpl.java
+│   │
+│   ├── inventory/
+│   │   ├── InventoryManager.java
+│   │   └── InventoryManagerImpl.java
+│   │
+│   ├── payment/
+│   │   ├── PaymentProcessor.java
+│   │   └── PaymentProcessorImpl.java
+│   │
+│   ├── dispenser/
+│   │   ├── DispensingUnit.java
+│   │   └── DispensingUnitImpl.java
+│   │
+│   └── logger/
+│       ├── TransactionLogger.java
+│       └── TransactionLoggerImpl.java
+│
+├── exception/                 # Custom exceptions (optional but useful)
+│   ├── ProductNotFoundException.java
+│   ├── OutOfStockException.java
+│   └── PaymentFailedException.java
+│
+├── util/                      # Utilities/helpers (optional)
+│   └── IdGenerator.java
+│
+└── Main.java                  # For running the simulation / test
